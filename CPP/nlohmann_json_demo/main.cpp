@@ -15,15 +15,14 @@ int main(int argc, char** argv) {
         std::cout << "Failed to open " << argv << "!" << std::endl;
     }
 
-    nlohmann::json j;
+    nlohmann::ordered_json j;
     file >> j;
 
-    if (j.contains("sys_channel_num")) {
-        std::cout << j["sys_channel_num"] << std::endl;
-    }
-    else {
-        std::cout << "there is no entry with key sys_channel_num" << std::endl;
-    }
+    std::cout << j.dump() << std::endl;
+
+    nlohmann::ordered_json jj = nlohmann::ordered_json::parse(j.dump());
+    std::cout << jj.dump() << std::endl;
+    std::cout << jj["ReconCommands"] << std::endl;
 
     return 0;
 }

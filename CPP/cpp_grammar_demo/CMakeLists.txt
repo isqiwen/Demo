@@ -1,0 +1,6 @@
+add_executable(func_pointer_demo func_pointer.cpp)
+add_executable(lambda_demo lambda.cpp)
+add_executable(pointer_demo pointer.cpp)
+add_executable(polymorphic_demo polymorphic.cpp)
+add_executable(size_of_demo size_of.cpp)
+add_executable(variadic_templates_demo variadic_templates.cpp)

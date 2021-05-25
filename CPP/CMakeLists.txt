@@ -13,3 +13,4 @@ conan_basic_setup(TARGETS)
 
 # add subdirectory
 add_subdirectory(nlohmann_json_demo)
+add_subdirectory(cpp_grammar_demo)

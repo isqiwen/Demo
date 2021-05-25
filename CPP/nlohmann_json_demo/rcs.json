@@ -1,3 +1,5 @@
 {
-    "sys_channel_num" : 16
+    "sys_channel_num" : {
+        "name": "wangqiwen"
+    }
 }
